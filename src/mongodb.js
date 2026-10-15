@@ -1,0 +1,30 @@
+// Conexión al clúster de MongoDB Atlas (igual que en la clase 13).
+const dotenv = require('dotenv');
+dotenv.config();
+
+const { MongoClient } = require('mongodb');
+
+const URI = process.env.MONGODB_URLSTRING;
+const client = new MongoClient(URI);
+
+async function connectToMongoDB() {
+  try {
+    await client.connect();
+    console.log('Conectado a MongoDB');
+    return client;
+  } catch (error) {
+    console.error('Error al conectarse a MongoDB:', error.message);
+    return null;
+  }
+}
+
+async function disconnectFromMongoDB() {
+  try {
+    await client.close();
+    console.log('Desconectado de MongoDB');
+  } catch (error) {
+    console.error('Error al desconectarse de MongoDB:', error.message);
+  }
+}
+
+module.exports = { connectToMongoDB, disconnectFromMongoDB };
