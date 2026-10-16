@@ -1,4 +1,4 @@
-// Conexión al clúster de MongoDB Atlas (igual que en la clase 13).
+
 const dotenv = require('dotenv');
 dotenv.config();
 
