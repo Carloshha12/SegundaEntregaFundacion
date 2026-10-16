@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "patente": "AB123CD",
+    "conductor": "Juan Pérez",
+    "ruta": "Neuquén - Bahía Blanca",
+    "capacidadLitros": 30000,
+    "kilometraje": 152300,
+    "estado": "en ruta",
+    "icono": "🚛"
+  },
+  {
+    "id": 2,
+    "patente": "AC456EF",
+    "conductor": "María Gómez",
+    "ruta": "Comodoro Rivadavia - Puerto Madryn",
+    "capacidadLitros": 25000,
+    "kilometraje": 98750,
+    "estado": "disponible",
+    "icono": "🛢️"
+  },
+  {
+    "id": 3,
+    "patente": "AD789GH",
+    "conductor": "Carlos Ramírez",
+    "ruta": "Mendoza - San Rafael",
+    "capacidadLitros": 32000,
+    "kilometraje": 210400,
+    "estado": "en taller",
+    "icono": "🔧"
+  },
+  {
+    "id": 4,
+    "patente": "AE012IJ",
+    "conductor": "Lucía Fernández",
+    "ruta": "Neuquén - Añelo",
+    "capacidadLitros": 28000,
+    "kilometraje": 64200,
+    "estado": "en ruta",
+    "icono": "🚚"
+  }
+]

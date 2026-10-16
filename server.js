@@ -23,7 +23,8 @@ app.get('/camiones', (req, res) =>
   })
 );
 
-// regexp era para buscar coincidencias parciales, no exactas. como el %z% de SQL. Pero no es necesario, ya que el find() de MongoDB ya hace coincidencias parciales.
+// GET: camiones por ruta. Se usa RegExp para buscar coincidencias parciales y sin distinguir
+// mayúsculas (como el LIKE '%texto%' de SQL); find() con un string solo trae coincidencias exactas.
 // Va antes de /camiones/:id para que "ruta" no se tome como un id.
 app.get('/camiones/ruta/:ruta', (req, res) =>
   usarColeccion(res, async (camiones) => {
