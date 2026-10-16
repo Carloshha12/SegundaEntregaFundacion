@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
   res.status(200).send('Bienvenido a la API de la Flota de Camiones 🚛');
 });
 
-// GET: todos los camiones
+
 app.get('/camiones', (req, res) =>
   usarColeccion(res, async (camiones) => {
     const lista = await camiones.find().toArray();
@@ -23,9 +23,7 @@ app.get('/camiones', (req, res) =>
   })
 );
 
-// GET: camiones por ruta. Se usa RegExp para buscar coincidencias parciales y sin distinguir
-// mayúsculas (como el LIKE '%texto%' de SQL); find() con un string solo trae coincidencias exactas.
-// Va antes de /camiones/:id para que "ruta" no se tome como un id.
+
 app.get('/camiones/ruta/:ruta', (req, res) =>
   usarColeccion(res, async (camiones) => {
     const ruta = req.params.ruta.trim();
@@ -59,7 +57,7 @@ app.post('/camiones', (req, res) => {
   });
 });
 
-// PUT: modificar un camión por id
+
 app.put('/camiones/:id', (req, res) => {
   const id = parseInt(req.params.id) || 0;
   const cambios = req.body;
@@ -76,7 +74,7 @@ app.put('/camiones/:id', (req, res) => {
   });
 });
 
-// DELETE: baja de un camión por id
+
 app.delete('/camiones/:id', (req, res) =>
   usarColeccion(res, async (camiones) => {
     const id = parseInt(req.params.id) || 0;
@@ -88,7 +86,6 @@ app.delete('/camiones/:id', (req, res) =>
   })
 );
 
-// Cualquier ruta que no exista
 app.use((req, res) => {
   res.status(404).send('Ruta no encontrada');
 });
