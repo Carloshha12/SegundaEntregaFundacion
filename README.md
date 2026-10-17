@@ -51,6 +51,11 @@ El servidor queda escuchando en `http://localhost:3008`.
 
 Cualquier otra ruta devuelve `404 Ruta no encontrada`.
 
+### Validaciones
+
+- **POST:** el body tiene que incluir todos los campos (`id`, `patente`, `conductor`, `ruta`, `capacidad`, `anio`, `estado`). Si falta alguno devuelve `400 Faltan campos: ...`. Si ya existe un camión con ese `id` devuelve `400 Ya existe un camión con id ...`.
+- **PUT:** el body no puede estar vacío ni incluir `_id`. En ese caso devuelve `400`.
+
 ### Ejemplos
 
 ```
