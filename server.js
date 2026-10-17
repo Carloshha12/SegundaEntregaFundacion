@@ -3,6 +3,7 @@ const { usarColeccion } = require('./src/coleccion');
 
 const app = express();
 const PORT = process.env.PORT || 3008;
+const CAMPOS = ['id', 'patente', 'conductor', 'ruta', 'capacidad', 'anio', 'estado'];
 
 app.use(express.json());
 
@@ -51,7 +52,17 @@ app.post('/camiones', (req, res) => {
     return res.status(400).send('Error en el formato de datos a crear');
   }
 
+  const faltantes = CAMPOS.filter((campo) => nuevoCamion[campo] === undefined);
+  if (faltantes.length > 0) {
+    return res.status(400).send(`Faltan campos: ${faltantes.join(', ')}`);
+  }
+
   return usarColeccion(res, async (camiones) => {
+    const existente = await camiones.findOne({ id: nuevoCamion.id });
+    if (existente) {
+      return res.status(400).send(`Ya existe un camión con id ${nuevoCamion.id}`);
+    }
+
     await camiones.insertOne(nuevoCamion);
     res.status(201).json(nuevoCamion);
   });
@@ -63,6 +74,9 @@ app.put('/camiones/:id', (req, res) => {
   const cambios = req.body;
   if (!cambios || Object.keys(cambios).length === 0) {
     return res.status(400).send('Error en el formato de datos a modificar');
+  }
+  if (cambios._id !== undefined) {
+    return res.status(400).send('No se puede modificar el _id');
   }
 
   return usarColeccion(res, async (camiones) => {
