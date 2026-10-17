@@ -9,15 +9,14 @@ API REST hecha con Node.js, Express y MongoDB Atlas para gestionar una flota de 
   "id": 1,
   "patente": "AB123CD",
   "conductor": "Juan Pérez",
-  "ruta": "Neuquén - Bahía Blanca",
-  "capacidadLitros": 30000,
-  "kilometraje": 152300,
-  "estado": "en ruta",
-  "icono": "🚛"
+  "ruta": "Añelo - Neuquén Capital",
+  "capacidad": 30000,
+  "anio": 2020,
+  "estado": "disponible"
 }
 ```
 
-`estado` puede ser `en ruta`, `disponible` o `en taller`. Los datos iniciales están en `camiones.json`.
+`capacidad` está en litros. `estado` puede ser `en ruta`, `disponible` o `en taller`. Los datos iniciales están en `camiones.json`.
 
 ## Instalación
 
@@ -56,23 +55,22 @@ Cualquier otra ruta devuelve `404 Ruta no encontrada`.
 
 ```
 GET http://localhost:3008/camiones/2
-GET http://localhost:3008/camiones/ruta/mendoza
+GET http://localhost:3008/camiones/ruta/zapala
 ```
 
-> La búsqueda por ruta distingue tildes: `neuquen` no encuentra "Neuquén", hay que escribir `neuquén`.
+> La búsqueda por ruta distingue tildes: `anelo` no encuentra "Añelo", hay que escribir `añelo`.
 
 ```
 POST http://localhost:3008/camiones
 Content-Type: application/json
 
 {
-  "id": 5,
-  "patente": "AF345KL",
+  "id": 9,
+  "patente": "AJ567ST",
   "conductor": "Pedro Sosa",
-  "ruta": "Plaza Huincul - Neuquén",
-  "capacidadLitros": 27000,
-  "kilometraje": 45000,
-  "estado": "disponible",
-  "icono": "🚛"
+  "ruta": "Zapala - Neuquén Capital",
+  "capacidad": 28000,
+  "anio": 2024,
+  "estado": "disponible"
 }
 ```

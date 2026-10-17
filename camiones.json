@@ -3,40 +3,72 @@
     "id": 1,
     "patente": "AB123CD",
     "conductor": "Juan Pérez",
-    "ruta": "Neuquén - Bahía Blanca",
-    "capacidadLitros": 30000,
-    "kilometraje": 152300,
-    "estado": "en ruta",
-    "icono": "🚛"
+    "ruta": "Añelo - Neuquén Capital",
+    "capacidad": 30000,
+    "anio": 2020,
+    "estado": "disponible"
   },
   {
     "id": 2,
     "patente": "AC456EF",
     "conductor": "María Gómez",
-    "ruta": "Comodoro Rivadavia - Puerto Madryn",
-    "capacidadLitros": 25000,
-    "kilometraje": 98750,
-    "estado": "disponible",
-    "icono": "🛢️"
+    "ruta": "Rincón de los Sauces - Plaza Huincul",
+    "capacidad": 28000,
+    "anio": 2019,
+    "estado": "en ruta"
   },
   {
     "id": 3,
     "patente": "AD789GH",
-    "conductor": "Carlos Ramírez",
-    "ruta": "Mendoza - San Rafael",
-    "capacidadLitros": 32000,
-    "kilometraje": 210400,
-    "estado": "en taller",
-    "icono": "🔧"
+    "conductor": "Carlos López",
+    "ruta": "Añelo - Cutral Có",
+    "capacidad": 32000,
+    "anio": 2021,
+    "estado": "en taller"
   },
   {
     "id": 4,
     "patente": "AE012IJ",
-    "conductor": "Lucía Fernández",
-    "ruta": "Neuquén - Añelo",
-    "capacidadLitros": 28000,
-    "kilometraje": 64200,
-    "estado": "en ruta",
-    "icono": "🚚"
+    "conductor": "Ana Martínez",
+    "ruta": "Loma Campana - Neuquén Capital",
+    "capacidad": 30000,
+    "anio": 2022,
+    "estado": "disponible"
+  },
+  {
+    "id": 5,
+    "patente": "AF345KL",
+    "conductor": "Diego Fernández",
+    "ruta": "Rincón de los Sauces - Añelo",
+    "capacidad": 29000,
+    "anio": 2018,
+    "estado": "en ruta"
+  },
+  {
+    "id": 6,
+    "patente": "AG678MN",
+    "conductor": "Lucía Sánchez",
+    "ruta": "Añelo - Zapala",
+    "capacidad": 31000,
+    "anio": 2020,
+    "estado": "disponible"
+  },
+  {
+    "id": 7,
+    "patente": "AH901OP",
+    "conductor": "Martín Díaz",
+    "ruta": "Plaza Huincul - Neuquén Capital",
+    "capacidad": 27000,
+    "anio": 2017,
+    "estado": "en taller"
+  },
+  {
+    "id": 8,
+    "patente": "AI234QR",
+    "conductor": "Sofía Romero",
+    "ruta": "Loma Campana - Añelo",
+    "capacidad": 30000,
+    "anio": 2023,
+    "estado": "en ruta"
   }
 ]
