@@ -1,5 +1,6 @@
 const express = require('express');
 const { usarColeccion } = require('./src/coleccion');
+const { disconnectFromMongoDB } = require('./src/mongodb');
 
 const app = express();
 const PORT = process.env.PORT || 3008;
@@ -105,3 +106,8 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Servidor escuchando en http://localhost:${PORT}`));
+
+process.on('SIGINT', async () => {
+  await disconnectFromMongoDB();
+  process.exit(0);
+});

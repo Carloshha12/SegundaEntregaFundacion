@@ -1,5 +1,5 @@
 
-const { connectToMongoDB, disconnectFromMongoDB } = require('./mongodb');
+const { connectToMongoDB } = require('./mongodb');
 
 async function usarColeccion(res, operacion) {
   const client = await connectToMongoDB();
@@ -15,8 +15,6 @@ async function usarColeccion(res, operacion) {
   } catch (error) {
     console.error(error);
     res.status(500).send('Error al procesar la solicitud');
-  } finally {
-    await disconnectFromMongoDB();
   }
 }
 
