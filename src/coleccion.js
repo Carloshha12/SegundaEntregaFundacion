@@ -4,7 +4,7 @@ const { connectToMongoDB } = require('./mongodb');
 async function usarColeccion(res, operacion) {
   const client = await connectToMongoDB();
   if (!client) {
-    res.status(500).send('Error al conectarse a MongoDB');
+    res.status(500).json({ error: 'Error al conectarse a MongoDB' });
     return;
   }
 
@@ -14,7 +14,7 @@ async function usarColeccion(res, operacion) {
     await operacion(camiones);
   } catch (error) {
     console.error(error);
-    res.status(500).send('Error al procesar la solicitud');
+    res.status(500).json({ error: 'Error al procesar la solicitud' });
   }
 }
 
