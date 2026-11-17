@@ -1,0 +1,14 @@
+{
+  "1": ["Ciencia Ficción", "Terror", "Drama"],
+  "2": ["Drama", "Crimen"],
+  "3": ["Acción", "Crimen", "Suspenso"],
+  "4": ["Ciencia Ficción", "Terror", "Suspenso"],
+  "5": ["Drama", "Historia"],
+  "6": ["Drama"],
+  "7": ["Drama", "Crimen", "Suspenso"],
+  "8": ["Fantasía", "Drama"],
+  "9": ["Fantasía", "Acción", "Aventura"],
+  "10": ["Drama", "Suspenso", "Comedia"],
+  "11": ["Ciencia Ficción", "Misterio", "Suspenso"],
+  "12": ["Animación", "Aventura", "Familia"]
+}

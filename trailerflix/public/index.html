@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trailerflix API</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bienvenido a <span>Trailerflix</span></h1>
+      <p class="subtitle">API de catálogo de películas y series</p>
+
+      <div class="endpoints">
+        <div class="endpoint">
+          <span class="method">GET</span>
+          <code>/catalogo</code>
+          <span class="desc">Todo el catálogo</span>
+        </div>
+        <div class="endpoint">
+          <span class="method">GET</span>
+          <code>/titulo/:title</code>
+          <span class="desc">Buscar por título</span>
+        </div>
+        <div class="endpoint">
+          <span class="method">GET</span>
+          <code>/categoria/:cat</code>
+          <span class="desc">Filtrar por categoría</span>
+        </div>
+        <div class="endpoint">
+          <span class="method">GET</span>
+          <code>/reparto/:act</code>
+          <span class="desc">Buscar por actor/actriz</span>
+        </div>
+        <div class="endpoint">
+          <span class="method">GET</span>
+          <code>/trailer/:id</code>
+          <span class="desc">Trailer por ID</span>
+        </div>
+        <div class="endpoint">
+          <span class="method">GET</span>
+          <code>/genero/:gen</code>
+          <span class="desc">Filtrar por género</span>
+        </div>
+        <div class="endpoint">
+          <span class="method">GET</span>
+          <code>/contenido/:id</code>
+          <span class="desc">Contenido por ID</span>
+        </div>
+        <div class="endpoint">
+          <span class="method">POST</span>
+          <code>/contenido</code>
+          <span class="desc">Agregar contenido</span>
+        </div>
+        <div class="endpoint">
+          <span class="method">PUT</span>
+          <code>/contenido/:id</code>
+          <span class="desc">Modificar contenido</span>
+        </div>
+        <div class="endpoint">
+          <span class="method">DELETE</span>
+          <code>/contenido/:id</code>
+          <span class="desc">Eliminar contenido</span>
+        </div>
+      </div>
+
+      <footer>Trailerflix &middot; Node.js + Express + Sequelize &middot; <span id="year"></span></footer>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

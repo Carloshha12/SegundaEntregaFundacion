@@ -2,6 +2,8 @@
 
 API REST hecha con Node.js, Express y MongoDB Atlas para gestionar una flota de camiones que transportan crudo.
 
+> **Pre entrega 3:** el proyecto Trailerflix (MySQL + Sequelize) está en la carpeta [`trailerflix/`](trailerflix/), con su propio [README](trailerflix/README.md).
+
 ## Sumario
 
 - [Estructura de un documento](#estructura-de-un-documento)

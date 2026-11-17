@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "titulo": "Stranger Things",
+        "categoria": "serie",
+        "reparto": "Millie Bobby Brown, Finn Wolfhard, Winona Ryder, David Harbour",
+        "resumen": "Un grupo de chicos enfrenta fuerzas sobrenaturales en su pueblo de Indiana.",
+        "temporadas": 4,
+        "poster": "stranger_things.jpg",
+        "trailer": "https://www.youtube.com/watch?v=b9EkMc79ZSU"
+    },
+    {
+        "id": 2,
+        "titulo": "El Irlandés",
+        "categoria": "película",
+        "reparto": "Robert De Niro, Al Pacino, Joe Pesci",
+        "resumen": "Un veterano recuerda su vida como sicario ligado a la mafia.",
+        "temporadas": null,
+        "poster": "el_irlandes.jpg",
+        "trailer": ""
+    },
+    {
+        "id": 3,
+        "titulo": "La Casa de Papel",
+        "categoria": "serie",
+        "reparto": "Úrsula Corberó, Álvaro Morte, Itziar Ituño",
+        "resumen": "Un grupo de ladrones planea el atraco perfecto a la Casa de Moneda.",
+        "temporadas": 5,
+        "poster": "la_casa_de_papel.jpg",
+        "trailer": "https://www.youtube.com/watch?v=_InqQJRqGW4"
+    },
+    {
+        "id": 4,
+        "titulo": "El Hoyo",
+        "categoria": "película",
+        "reparto": "Iván Massagué, Zorion Eguileor, Antonia San Juan",
+        "resumen": "En una prisión vertical, la comida baja piso por piso y desata el instinto de supervivencia.",
+        "temporadas": null,
+        "poster": "el_hoyo.jpg",
+        "trailer": "https://www.youtube.com/watch?v=RlfooqeZcdY"
+    },
+    {
+        "id": 5,
+        "titulo": "The Crown",
+        "categoria": "serie",
+        "reparto": "Claire Foy, Olivia Colman, Imelda Staunton",
+        "resumen": "El reinado de la reina Isabel II a lo largo de las décadas.",
+        "temporadas": 6,
+        "poster": "the_crown.jpg",
+        "trailer": ""
+    },
+    {
+        "id": 6,
+        "titulo": "Roma",
+        "categoria": "película",
+        "reparto": "Yalitza Aparicio, Marina de Tavira, Diego Cortina Autrey",
+        "resumen": "La vida de una empleada doméstica en la Ciudad de México de los años 70.",
+        "temporadas": null,
+        "poster": "roma.jpg",
+        "trailer": "https://www.youtube.com/watch?v=6BS27ngZtxg"
+    },
+    {
+        "id": 7,
+        "titulo": "Breaking Bad",
+        "categoria": "serie",
+        "reparto": "Bryan Cranston, Aaron Paul, Anna Gunn",
+        "resumen": "Un profesor de química con cáncer se convierte en fabricante de metanfetamina.",
+        "temporadas": 5,
+        "poster": "breaking_bad.jpg",
+        "trailer": "https://www.youtube.com/watch?v=HhesaQXLuRY"
+    },
+    {
+        "id": 8,
+        "titulo": "El Laberinto del Fauno",
+        "categoria": "película",
+        "reparto": "Ivana Baquero, Sergi López, Maribel Verdú",
+        "resumen": "Una niña escapa de la España franquista hacia un mundo de fantasía y peligros.",
+        "temporadas": null,
+        "poster": "laberinto_del_fauno.jpg",
+        "trailer": "https://www.youtube.com/watch?v=Exu6NVtsMd0"
+    },
+    {
+        "id": 9,
+        "titulo": "The Witcher",
+        "categoria": "serie",
+        "reparto": "Henry Cavill, Anya Chalotra, Freya Allan",
+        "resumen": "Un cazador de monstruos recorre un continente marcado por la guerra y la magia.",
+        "temporadas": 3,
+        "poster": "the_witcher.jpg",
+        "trailer": ""
+    },
+    {
+        "id": 10,
+        "titulo": "Parásitos",
+        "categoria": "película",
+        "reparto": "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong",
+        "resumen": "Una familia pobre se infiltra en la vida de una familia adinerada.",
+        "temporadas": null,
+        "poster": "parasitos.jpg",
+        "trailer": "https://www.youtube.com/watch?v=5xH0HfJHsaY"
+    },
+    {
+        "id": 11,
+        "titulo": "Dark",
+        "categoria": "serie",
+        "reparto": "Louis Hofmann, Lisa Vicari, Oliver Masucci",
+        "resumen": "La desaparición de unos niños destapa un secreto de viajes en el tiempo en un pueblo alemán.",
+        "temporadas": 3,
+        "poster": "dark.jpg",
+        "trailer": "https://www.youtube.com/watch?v=ymC4Lc-yg9Q"
+    },
+    {
+        "id": 12,
+        "titulo": "Coco",
+        "categoria": "película",
+        "reparto": "Anthony Gonzalez, Gael García Bernal, Benjamin Bratt",
+        "resumen": "Un niño viaja a la Tierra de los Muertos para descubrir el secreto de su familia.",
+        "temporadas": null,
+        "poster": "coco.jpg",
+        "trailer": ""
+    }
+]
